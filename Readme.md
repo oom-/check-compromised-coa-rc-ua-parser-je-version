@@ -7,6 +7,7 @@ __The list of versions comes from:__
 * https://therecord.media/malware-found-in-npm-package-with-millions-of-weekly-downloads/
 
 ## Instructions
+**Note:** No need to run `npm install`, the script has no dependencies.
 1. Replace the content of **"node_modules_on_disk.txt"** by the list of **"node_modules"** folders on your system (one by line).
 2. Execute the script with `node main.js`
 
