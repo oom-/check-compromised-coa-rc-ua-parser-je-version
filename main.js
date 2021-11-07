@@ -25,7 +25,7 @@ const fs = require("fs");
                 let package = JSON.parse(fs.readFileSync([line, folder, 'package.json'].join('/'), { encoding: 'utf-8' }));
                 let versionOk = compromisedVersions[foldersToFind[index]].indexOf(package.version) == -1 ? `OK -> ${package.version}` : `KO -> ${package.version}`;
                 console.log(`Found ${foldersToFind[index]} in: '${line}' version: ${versionOk}`);
-                if (versionOk == 'KO')
+                if (versionOk.indexOf('KO') != -1)
                     process.exit(0);
             }
         }
