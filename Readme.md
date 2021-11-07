@@ -7,7 +7,7 @@ __The list of versions comes from:__
 * https://therecord.media/malware-found-in-npm-package-with-millions-of-weekly-downloads/
 
 ## Instructions
-1. Place line by line the path of your **"node_modules"** folders presents on your system in "node_modules_on_disk.txt".
+1. Replace the content of **"node_modules_on_disk.txt"** by the list of **"node_modules"** folders on your system (one by line).
 2. Execute the script with `node main.js`
 
 > ⚠️ If the script stop before `"Complete check done"`, it mean that the subfolder contains a compromised version. ⚠️
